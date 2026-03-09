@@ -7,7 +7,7 @@ public class ERyder {
     private boolean isAvailable;
     private double kmDriven;
 
-    public void ride(){
+    public  void ride(){
         if(isAvailable && batterylevel>=normalValue){
             System.out.println("The bike is available");
         }else{
@@ -20,7 +20,7 @@ public class ERyder {
         System.out.println("BikeID:                     "+bikeID);
         System.out.println("Battery level:              "+batterylevel);
         System.out.println("Availability:               "+isAvailable);
-        System.out.println("Diatance travelled in km:   "+kmDriven);
+        System.out.println("Distance travelled in km:   "+kmDriven);
     }
 
     public void setBatterylevel(int batterylevel){
@@ -45,14 +45,5 @@ public class ERyder {
         this.kmDriven=kmDriven;
     }
 
-public class Main{
 
-    public static void main(String[] args) throws Exception {
-        ERyder bike1=new ERyder();
-        bike1.printBikeDetails();
-
-        ERyder bike2=new ERyder("112233",1,true,1.0);
-        bike2.printBikeDetails();
-    }
-}
 }
